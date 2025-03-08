@@ -1,0 +1,31 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    font-size: 90px;
+    cursor: pointer;
+}
+
+input {
+width: 180px;
+font-size: 20px;
+cursor: pointer;
+font-weight: bold;
+
+}
+
+button {
+width: 190px;
+font-size: 20px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.imagem-converter {
+    width: 500px;
+    margin-right: 100%;
+    padding: 30px;   
+    
+}
+

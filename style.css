@@ -1,31 +1,76 @@
 body {
-    background-color: beige;
+    background-color: #f4f4f4; /* Cor de fundo mais suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centraliza verticalmente */
+    text-align: center;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 3rem; /* Tamanho mais adequado */
+    color: #333; /* Cor mais escura para melhor contraste */
+    margin-bottom: 1.5rem; /* Espaçamento melhorado */
+    font-weight: 600; /* Peso da fonte mais profissional */
+    letter-spacing: -1px; /* Ajuste de espaçamento entre letras */
     cursor: pointer;
+    transition: color 0.3s ease; /* Transição suave para interações */
+}
+
+h1:hover {
+    color: #3498db; /* Cor de destaque ao passar o mouse */
 }
 
 input {
-width: 180px;
-font-size: 20px;
-cursor: pointer;
-font-weight: bold;
+    width: 250px; /* Largura maior para melhor usabilidade */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    border: 2px solid #ccc; /* Borda mais suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 1rem; /* Espaçamento abaixo do input */
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
 
+input:focus {
+    border-color: #3498db; /* Cor de destaque ao focar */
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Sombra ao focar */
 }
 
 button {
-width: 190px;
-font-size: 20px;
-cursor: pointer;
-font-weight: bold;
+    width: 270px; /* Largura maior para corresponder ao input */
+    padding: 12px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    background-color: #3498db; /* Cor de fundo azul moderna */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+button:hover {
+    background-color: #2980b9; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de levantar */
+}
+
+button:active {
+    transform: translateY(0); /* Retorna ao estado original ao clicar */
 }
 
 .imagem-converter {
-    width: 500px;
-    margin-right: 100%;
-    padding: 30px;   
-    
+    width: 100%; /* Largura responsiva */
+    max-width: 500px; /* Largura máxima */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-top: 2rem; /* Espaçamento acima da imagem */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 0; /* Remove o padding extra */
 }
-
